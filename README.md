@@ -1,6 +1,6 @@
 ## 深澜认证协议,python模拟登录XJTU校园网（仅限兴庆教学区XJTU_STU Wifi 对应认证页面IP为10.6.18.2）
 
-- 根据大佬博客原文：https://blog.csdn.net/qq_41797946/article/details/89417722修改
+- 根据大佬博客原文修改，原文在：https://blog.csdn.net/qq_41797946/article/details/89417722
 - 1.对原来的jxnu_wifi.py进行了适应性修改，将认证地址改为10.6.18.2及其子域名；将username和password行的账号密码信息删除
 - 2.在KIMI的帮助下修改了encryption系列文件的一个数组索引越界的一个错误
 - 3.新增了检查网络是否正常连接的检查程序，添加了提示信息
