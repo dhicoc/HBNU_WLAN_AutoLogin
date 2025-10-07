@@ -8,11 +8,11 @@ from encryption.srun_xencode import *
 header={
 	'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36'
 }
-init_url="http://10.6.18.2"
-get_challenge_api="http://10.6.18.2/cgi-bin/get_challenge"
+init_url="http://172.16.1.11/srun_portal_pc"
+get_challenge_api="http://172.16.1.11/cgi-bin/get_challenge"
 
-srun_portal_api="http://10.6.18.2/cgi-bin/srun_portal"
-get_info_api="http://10.6.18.2/cgi-bin/rad_user_info?callback=jQuery112406118340540763985_1556004912581&_=1556004912582"
+srun_portal_api="http://172.16.1.11/cgi-bin/srun_portal"
+get_info_api="http://172.16.1.11/cgi-bin/rad_user_info?callback=jQuery112402301351940080697_1759812122119&_=1759812122120"
 n = '200'
 type = '1'
 ac_id='1'
@@ -45,7 +45,7 @@ def init_getip():
     print("初始化页面返回内容：", init_res.text)  # 打印返回内容以便调试
 
     # 尝试匹配 IP 地址
-    ip_match = re.search(r'id="user_ip" value="(.*?)"', init_res.text)
+    ip_match = re.search(r'ip\s*:\s*\"(.*?)\"', init_res.text)
     if ip_match:
         ip = ip_match.group(1)
         print("ip:", ip)
