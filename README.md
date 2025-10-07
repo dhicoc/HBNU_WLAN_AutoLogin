@@ -9,7 +9,7 @@
 
 ## 如何使用
 
-### 1.打开xjtu_wifi.py,安装必须的软件包，然后添加username和password行的账号密码参数,srun_md5.py,srun_xencode.py中都有需要填写账号密码参数的部分，请注意：xjtu_wifi.py在L97,L98分别填写用户名和密码,srun_md5.py在L6填写密码,srun_xencode.py在L72，填写账号和密码
+### 1.打开hbnu_wifi.py,安装必须的软件包，然后添加username和password行的账号密码参数,srun_md5.py,srun_xencode.py中都有需要填写账号密码参数的部分，请注意：xjtu_wifi.py在L97,L98分别填写用户名和密码,srun_md5.py在L6填写密码,srun_xencode.py在L72，填写账号和密码
 
 ### 2.若调试完成，可用pyintsaller -F -w hbnu_wifi.py的命令进行打包，生成exe文件也可使用
 
